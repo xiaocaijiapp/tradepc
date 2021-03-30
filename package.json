@@ -1,0 +1,50 @@
+{
+  "name": "qmwm-pc",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env custom_mode=dev nuxt",
+    "build:dev": "cross-env custom_mode=dev nuxt build",
+    "build:test": "cross-env custom_mode=test nuxt build",
+    "build:pro": "cross-env custom_mode=pro nuxt build",
+    "start:dev": "cross-env custom_mode=dev nuxt start",
+    "start:test": "cross-env custom_mode=test nuxt start",
+    "start:pro": "cross-env custom_mode=pro nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "dependencies": {
+    "axios-extensions": "^3.1.3",
+    "cookie-universal-nuxt": "^2.1.4",
+    "core-js": "^2.6.12",
+    "cross-env": "^7.0.3",
+    "echarts": "^5.0.2",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.21",
+    "lru-cache": "^6.0.0",
+    "nuxt": "^2.14.12",
+    "qrcodejs2": "^0.0.2",
+    "view-design": "^4.0.0",
+    "vue-clipboard2": "^0.3.1",
+    "vue-lazyload": "^1.3.3",
+    "vuex-persistedstate": "^4.0.0-beta.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/proxy": "^2.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "eslint": "^7.18.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.5.0",
+    "file-loader": "^6.2.0",
+    "less": "^4.1.1",
+    "less-loader": "^5.0.0",
+    "url-loader": "^4.1.1",
+    "vue": "^2.6.12",
+    "vuex": "^3.6.2"
+  }
+}
